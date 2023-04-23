@@ -322,7 +322,7 @@
 typedef struct {
 
   /** ADC data buffer registers (DB0RH at 0x53e0) */
-  union {
+  volatile union {
 
     /// bytewise access to DB0RH
     uint8_t  byte;
@@ -339,7 +339,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB0RL at 0x53e1) */
-  union {
+  volatile union {
 
     /// bytewise access to DB0RL
     uint8_t  byte;
@@ -356,7 +356,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB1RH at 0x53e2) */
-  union {
+  volatile union {
 
     /// bytewise access to DB1RH
     uint8_t  byte;
@@ -373,7 +373,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB1RL at 0x53e3) */
-  union {
+  volatile union {
 
     /// bytewise access to DB1RL
     uint8_t  byte;
@@ -390,7 +390,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB2RH at 0x53e4) */
-  union {
+  volatile union {
 
     /// bytewise access to DB2RH
     uint8_t  byte;
@@ -407,7 +407,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB2RL at 0x53e5) */
-  union {
+  volatile union {
 
     /// bytewise access to DB2RL
     uint8_t  byte;
@@ -424,7 +424,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB3RH at 0x53e6) */
-  union {
+  volatile union {
 
     /// bytewise access to DB3RH
     uint8_t  byte;
@@ -441,7 +441,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB3RL at 0x53e7) */
-  union {
+  volatile union {
 
     /// bytewise access to DB3RL
     uint8_t  byte;
@@ -458,7 +458,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB4RH at 0x53e8) */
-  union {
+  volatile union {
 
     /// bytewise access to DB4RH
     uint8_t  byte;
@@ -475,7 +475,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB4RL at 0x53e9) */
-  union {
+  volatile union {
 
     /// bytewise access to DB4RL
     uint8_t  byte;
@@ -492,7 +492,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB5RH at 0x53ea) */
-  union {
+  volatile union {
 
     /// bytewise access to DB5RH
     uint8_t  byte;
@@ -509,7 +509,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB5RL at 0x53eb) */
-  union {
+  volatile union {
 
     /// bytewise access to DB5RL
     uint8_t  byte;
@@ -526,7 +526,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB6RH at 0x53ec) */
-  union {
+  volatile union {
 
     /// bytewise access to DB6RH
     uint8_t  byte;
@@ -543,7 +543,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB6RL at 0x53ed) */
-  union {
+  volatile union {
 
     /// bytewise access to DB6RL
     uint8_t  byte;
@@ -560,7 +560,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB7RH at 0x53ee) */
-  union {
+  volatile union {
 
     /// bytewise access to DB7RH
     uint8_t  byte;
@@ -577,7 +577,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB7RL at 0x53ef) */
-  union {
+  volatile union {
 
     /// bytewise access to DB7RL
     uint8_t  byte;
@@ -594,7 +594,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB8RH at 0x53f0) */
-  union {
+  volatile union {
 
     /// bytewise access to DB8RH
     uint8_t  byte;
@@ -611,7 +611,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB8RL at 0x53f1) */
-  union {
+  volatile union {
 
     /// bytewise access to DB8RL
     uint8_t  byte;
@@ -628,7 +628,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB9RH at 0x53f2) */
-  union {
+  volatile union {
 
     /// bytewise access to DB9RH
     uint8_t  byte;
@@ -645,7 +645,7 @@ typedef struct {
 
 
   /** ADC data buffer registers (DB9RL at 0x53f3) */
-  union {
+  volatile union {
 
     /// bytewise access to DB9RL
     uint8_t  byte;
@@ -666,7 +666,7 @@ typedef struct {
 
 
   /** ADC control/status register (CSR at 0x5400) */
-  union {
+  volatile union {
 
     /// bytewise access to CSR
     uint8_t  byte;
@@ -687,7 +687,7 @@ typedef struct {
 
 
   /** ADC configuration register 1 (CR1 at 0x5401) */
-  union {
+  volatile union {
 
     /// bytewise access to CR1
     uint8_t  byte;
@@ -708,7 +708,7 @@ typedef struct {
 
 
   /** ADC configuration register 2 (CR2 at 0x5402) */
-  union {
+  volatile union {
 
     /// bytewise access to CR2
     uint8_t  byte;
@@ -731,7 +731,7 @@ typedef struct {
 
 
   /** ADC configuration register 3 (CR3 at 0x5403) */
-  union {
+  volatile union {
 
     /// bytewise access to CR3
     uint8_t  byte;
@@ -750,7 +750,7 @@ typedef struct {
 
 
   /** ADC data register high (DRH at 0x5404) */
-  union {
+  volatile union {
 
     /// bytewise access to DRH
     uint8_t  byte;
@@ -767,7 +767,7 @@ typedef struct {
 
 
   /** ADC data register low (DRL at 0x5405) */
-  union {
+  volatile union {
 
     /// bytewise access to DRL
     uint8_t  byte;
@@ -784,7 +784,7 @@ typedef struct {
 
 
   /** ADC Schmitt trigger disable register high (TDRH at 0x5406) */
-  union {
+  volatile union {
 
     /// bytewise access to TDRH
     uint8_t  byte;
@@ -801,7 +801,7 @@ typedef struct {
 
 
   /** ADC Schmitt trigger disable register low (TDRL at 0x5407) */
-  union {
+  volatile union {
 
     /// bytewise access to TDRL
     uint8_t  byte;
@@ -818,7 +818,7 @@ typedef struct {
 
 
   /** ADC high threshold register high (HTRH at 0x5408) */
-  union {
+  volatile union {
 
     /// bytewise access to HTRH
     uint8_t  byte;
@@ -835,7 +835,7 @@ typedef struct {
 
 
   /** ADC high threshold register low (HTRL at 0x5409) */
-  union {
+  volatile union {
 
     /// bytewise access to HTRL
     uint8_t  byte;
@@ -853,7 +853,7 @@ typedef struct {
 
 
   /** ADC low threshold register high (LTRH at 0x540a) */
-  union {
+  volatile union {
 
     /// bytewise access to LTRH
     uint8_t  byte;
@@ -870,7 +870,7 @@ typedef struct {
 
 
   /** ADC low threshold register low (LTRL at 0x540b) */
-  union {
+  volatile union {
 
     /// bytewise access to LTRL
     uint8_t  byte;
@@ -888,7 +888,7 @@ typedef struct {
 
 
   /** ADC analog watchdog status register high (AWSRH at 0x540c) */
-  union {
+  volatile union {
 
     /// bytewise access to AWSRH
     uint8_t  byte;
@@ -907,7 +907,7 @@ typedef struct {
 
 
   /** ADC analog watchdog status register low (AWSRL at 0x540d) */
-  union {
+  volatile union {
 
     /// bytewise access to AWSRL
     uint8_t  byte;
@@ -931,7 +931,7 @@ typedef struct {
 
 
   /** ADC analog watchdog control register high (AWCRH at 0x540e) */
-  union {
+  volatile union {
 
     /// bytewise access to AWCRH
     uint8_t  byte;
@@ -950,7 +950,7 @@ typedef struct {
 
 
   /** ADC analog watchdog control register low (AWCRL at 0x540f) */
-  union {
+  volatile union {
 
     /// bytewise access to AWCRL
     uint8_t  byte;
@@ -986,7 +986,7 @@ typedef struct {
 typedef struct {
 
   /** AWU control/status register 1 (CSR1 at 0x50f0) */
-  union {
+  volatile union {
 
     /// bytewise access to CSR1
     uint8_t  byte;
@@ -1007,7 +1007,7 @@ typedef struct {
 
 
   /** AWU asynchronous prescaler buffer register (APR at 0x50f1) */
-  union {
+  volatile union {
 
     /// bytewise access to APR
     uint8_t  byte;
@@ -1025,7 +1025,7 @@ typedef struct {
 
 
   /** AWU timebase selection register (TBR at 0x50f2) */
-  union {
+  volatile union {
 
     /// bytewise access to TBR
     uint8_t  byte;
@@ -1055,7 +1055,7 @@ typedef struct {
 typedef struct {
 
   /** BEEP control/status register (CSR at 0x50f3) */
-  union {
+  volatile union {
 
     /// bytewise access to CSR
     uint8_t  byte;
@@ -1086,7 +1086,7 @@ typedef struct {
 typedef struct {
 
   /** Internal clock control register (ICKR at 0x50c0) */
-  union {
+  volatile union {
 
     /// bytewise access to ICKR
     uint8_t  byte;
@@ -1109,7 +1109,7 @@ typedef struct {
 
 
   /** External clock control register (ECKR at 0x50c1) */
-  union {
+  volatile union {
 
     /// bytewise access to ECKR
     uint8_t  byte;
@@ -1132,7 +1132,7 @@ typedef struct {
 
 
   /** Clock master status register (CMSR at 0x50c3) */
-  union {
+  volatile union {
 
     /// bytewise access to CMSR
     uint8_t  byte;
@@ -1149,7 +1149,7 @@ typedef struct {
 
 
   /** Clock master switch register (SWR at 0x50c4) */
-  union {
+  volatile union {
 
     /// bytewise access to SWR
     uint8_t  byte;
@@ -1166,7 +1166,7 @@ typedef struct {
 
 
   /** Clock switch control register (SWCR at 0x50c5) */
-  union {
+  volatile union {
 
     /// bytewise access to SWCR
     uint8_t  byte;
@@ -1187,7 +1187,7 @@ typedef struct {
 
 
   /** Clock divider register (CKDIVR at 0x50c6) */
-  union {
+  volatile union {
 
     /// bytewise access to CKDIVR
     uint8_t  byte;
@@ -1206,7 +1206,7 @@ typedef struct {
 
 
   /** Peripheral clock gating register 1 (PCKENR1 at 0x50c7) */
-  union {
+  volatile union {
 
     /// bytewise access to PCKENR1
     uint8_t  byte;
@@ -1223,7 +1223,7 @@ typedef struct {
 
 
   /** Clock security system register (CSSR at 0x50c8) */
-  union {
+  volatile union {
 
     /// bytewise access to CSSR
     uint8_t  byte;
@@ -1244,7 +1244,7 @@ typedef struct {
 
 
   /** Configurable clock control register (CCOR at 0x50c9) */
-  union {
+  volatile union {
 
     /// bytewise access to CCOR
     uint8_t  byte;
@@ -1265,7 +1265,7 @@ typedef struct {
 
 
   /** Peripheral clock gating register 2 (PCKENR2 at 0x50ca) */
-  union {
+  volatile union {
 
     /// bytewise access to PCKENR2
     uint8_t  byte;
@@ -1282,7 +1282,7 @@ typedef struct {
 
 
   /** CAN clock control register (CANCCR at 0x50cb) */
-  union {
+  volatile union {
 
     /// bytewise access to CANCCR
     uint8_t  byte;
@@ -1300,7 +1300,7 @@ typedef struct {
 
 
   /** HSI clock calibration trimming register (HSITRIMR at 0x50cc) */
-  union {
+  volatile union {
 
     /// bytewise access to HSITRIMR
     uint8_t  byte;
@@ -1318,7 +1318,7 @@ typedef struct {
 
 
   /** SWIM clock control register (SWIMCCR at 0x50cd) */
-  union {
+  volatile union {
 
     /// bytewise access to SWIMCCR
     uint8_t  byte;
@@ -1348,7 +1348,7 @@ typedef struct {
 typedef struct {
 
   /** Accumulator (A at 0x7f00) */
-  union {
+  volatile union {
 
     /// bytewise access to A
     uint8_t  byte;
@@ -1362,7 +1362,7 @@ typedef struct {
 
 
   /** Program counter extended (PCE at 0x7f01) */
-  union {
+  volatile union {
 
     /// bytewise access to PCE
     uint8_t  byte;
@@ -1376,7 +1376,7 @@ typedef struct {
 
 
   /** Program counter high (PCH at 0x7f02) */
-  union {
+  volatile union {
 
     /// bytewise access to PCH
     uint8_t  byte;
@@ -1390,7 +1390,7 @@ typedef struct {
 
 
   /** Program counter low (PCL at 0x7f03) */
-  union {
+  volatile union {
 
     /// bytewise access to PCL
     uint8_t  byte;
@@ -1404,7 +1404,7 @@ typedef struct {
 
 
   /** X index register high (XH at 0x7f04) */
-  union {
+  volatile union {
 
     /// bytewise access to XH
     uint8_t  byte;
@@ -1418,7 +1418,7 @@ typedef struct {
 
 
   /** X index register low (XL at 0x7f05) */
-  union {
+  volatile union {
 
     /// bytewise access to XL
     uint8_t  byte;
@@ -1432,7 +1432,7 @@ typedef struct {
 
 
   /** Y index register high (YH at 0x7f06) */
-  union {
+  volatile union {
 
     /// bytewise access to YH
     uint8_t  byte;
@@ -1446,7 +1446,7 @@ typedef struct {
 
 
   /** Y index register low (YL at 0x7f07) */
-  union {
+  volatile union {
 
     /// bytewise access to YL
     uint8_t  byte;
@@ -1460,7 +1460,7 @@ typedef struct {
 
 
   /** Stack pointer high (SPH at 0x7f08) */
-  union {
+  volatile union {
 
     /// bytewise access to SPH
     uint8_t  byte;
@@ -1474,7 +1474,7 @@ typedef struct {
 
 
   /** Stack pointer low (SPL at 0x7f09) */
-  union {
+  volatile union {
 
     /// bytewise access to SPL
     uint8_t  byte;
@@ -1488,7 +1488,7 @@ typedef struct {
 
 
   /** Condition code register (CCR at 0x7f0a) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR
     uint8_t  byte;
@@ -1516,7 +1516,7 @@ typedef struct {
 
 
   /** Global configuration register (CFG_GCR at 0x7f60) */
-  union {
+  volatile union {
 
     /// bytewise access to CFG_GCR
     uint8_t  byte;
@@ -1547,7 +1547,7 @@ typedef struct {
 typedef struct {
 
   /** DM breakpoint 1 register extended byte (BK1RE at 0x7f90) */
-  union {
+  volatile union {
 
     /// bytewise access to BK1RE
     uint8_t  byte;
@@ -1561,7 +1561,7 @@ typedef struct {
 
 
   /** DM breakpoint 1 register high byte (BK1RH at 0x7f91) */
-  union {
+  volatile union {
 
     /// bytewise access to BK1RH
     uint8_t  byte;
@@ -1575,7 +1575,7 @@ typedef struct {
 
 
   /** DM breakpoint 1 register low byte (BK1RL at 0x7f92) */
-  union {
+  volatile union {
 
     /// bytewise access to BK1RL
     uint8_t  byte;
@@ -1589,7 +1589,7 @@ typedef struct {
 
 
   /** DM breakpoint 2 register extended byte (BK2RE at 0x7f93) */
-  union {
+  volatile union {
 
     /// bytewise access to BK2RE
     uint8_t  byte;
@@ -1603,7 +1603,7 @@ typedef struct {
 
 
   /** DM breakpoint 2 register high byte (BK2RH at 0x7f94) */
-  union {
+  volatile union {
 
     /// bytewise access to BK2RH
     uint8_t  byte;
@@ -1617,7 +1617,7 @@ typedef struct {
 
 
   /** DM breakpoint 2 register low byte (BK2RL at 0x7f95) */
-  union {
+  volatile union {
 
     /// bytewise access to BK2RL
     uint8_t  byte;
@@ -1631,7 +1631,7 @@ typedef struct {
 
 
   /** DM debug module control register 1 (CR1 at 0x7f96) */
-  union {
+  volatile union {
 
     /// bytewise access to CR1
     uint8_t  byte;
@@ -1645,7 +1645,7 @@ typedef struct {
 
 
   /** DM debug module control register 2 (CR2 at 0x7f97) */
-  union {
+  volatile union {
 
     /// bytewise access to CR2
     uint8_t  byte;
@@ -1659,7 +1659,7 @@ typedef struct {
 
 
   /** DM debug module control/status register 1 (CSR1 at 0x7f98) */
-  union {
+  volatile union {
 
     /// bytewise access to CSR1
     uint8_t  byte;
@@ -1673,7 +1673,7 @@ typedef struct {
 
 
   /** DM debug module control/status register 2 (CSR2 at 0x7f99) */
-  union {
+  volatile union {
 
     /// bytewise access to CSR2
     uint8_t  byte;
@@ -1687,7 +1687,7 @@ typedef struct {
 
 
   /** DM enable function register (ENFCTR at 0x7f9a) */
-  union {
+  volatile union {
 
     /// bytewise access to ENFCTR
     uint8_t  byte;
@@ -1713,7 +1713,7 @@ typedef struct {
 typedef struct {
 
   /** Flash control register 1 (CR1 at 0x505a) */
-  union {
+  volatile union {
 
     /// bytewise access to CR1
     uint8_t  byte;
@@ -1734,7 +1734,7 @@ typedef struct {
 
 
   /** Flash control register 2 (CR2 at 0x505b) */
-  union {
+  volatile union {
 
     /// bytewise access to CR2
     uint8_t  byte;
@@ -1756,7 +1756,7 @@ typedef struct {
 
 
   /** Flash complementary control register 2 (NCR2 at 0x505c) */
-  union {
+  volatile union {
 
     /// bytewise access to NCR2
     uint8_t  byte;
@@ -1778,7 +1778,7 @@ typedef struct {
 
 
   /** Flash protection register (FPR at 0x505d) */
-  union {
+  volatile union {
 
     /// bytewise access to FPR
     uint8_t  byte;
@@ -1801,7 +1801,7 @@ typedef struct {
 
 
   /** Flash complementary protection register (NFPR at 0x505e) */
-  union {
+  volatile union {
 
     /// bytewise access to NFPR
     uint8_t  byte;
@@ -1824,7 +1824,7 @@ typedef struct {
 
 
   /** Flash in-application programming status register (IAPSR at 0x505f) */
-  union {
+  volatile union {
 
     /// bytewise access to IAPSR
     uint8_t  byte;
@@ -1851,7 +1851,7 @@ typedef struct {
 
 
   /** Flash program memory unprotection register (PUKR at 0x5062) */
-  union {
+  volatile union {
 
     /// bytewise access to PUKR
     uint8_t  byte;
@@ -1872,7 +1872,7 @@ typedef struct {
 
 
   /** Data EEPROM unprotection register (DUKR at 0x5064) */
-  union {
+  volatile union {
 
     /// bytewise access to DUKR
     uint8_t  byte;
@@ -1901,7 +1901,7 @@ typedef struct {
 typedef struct {
 
   /** I2C control register 1 (CR1 at 0x5210) */
-  union {
+  volatile union {
 
     /// bytewise access to CR1
     uint8_t  byte;
@@ -1921,7 +1921,7 @@ typedef struct {
 
 
   /** I2C control register 2 (CR2 at 0x5211) */
-  union {
+  volatile union {
 
     /// bytewise access to CR2
     uint8_t  byte;
@@ -1943,7 +1943,7 @@ typedef struct {
 
 
   /** I2C frequency register (FREQR at 0x5212) */
-  union {
+  volatile union {
 
     /// bytewise access to FREQR
     uint8_t  byte;
@@ -1961,7 +1961,7 @@ typedef struct {
 
 
   /** I2C Own address register low (OARL at 0x5213) */
-  union {
+  volatile union {
 
     /// bytewise access to OARL
     uint8_t  byte;
@@ -1979,7 +1979,7 @@ typedef struct {
 
 
   /** I2C Own address register high (OARH at 0x5214) */
-  union {
+  volatile union {
 
     /// bytewise access to OARH
     uint8_t  byte;
@@ -2004,7 +2004,7 @@ typedef struct {
 
 
   /** I2C data register (DR at 0x5216) */
-  union {
+  volatile union {
 
     /// bytewise access to DR
     uint8_t  byte;
@@ -2021,7 +2021,7 @@ typedef struct {
 
 
   /** I2C status register 1 (SR1 at 0x5217) */
-  union {
+  volatile union {
 
     /// bytewise access to SR1
     uint8_t  byte;
@@ -2045,7 +2045,7 @@ typedef struct {
 
 
   /** I2C status register 2 (SR2 at 0x5218) */
-  union {
+  volatile union {
 
     /// bytewise access to SR2
     uint8_t  byte;
@@ -2068,7 +2068,7 @@ typedef struct {
 
 
   /** I2C status register 3 (SR3 at 0x5219) */
-  union {
+  volatile volatile union {
 
     /// bytewise access to SR3
     uint8_t  byte;
@@ -2090,7 +2090,7 @@ typedef struct {
 
 
   /** I2C interrupt control register (ITR at 0x521a) */
-  union {
+  volatile union {
 
     /// bytewise access to ITR
     uint8_t  byte;
@@ -2110,7 +2110,7 @@ typedef struct {
 
 
   /** I2C Clock control register low (CCRL at 0x521b) */
-  union {
+  volatile union {
 
     /// bytewise access to CCRL
     uint8_t  byte;
@@ -2127,7 +2127,7 @@ typedef struct {
 
 
   /** I2C Clock control register high (CCRH at 0x521c) */
-  union {
+  volatile union {
 
     /// bytewise access to CCRH
     uint8_t  byte;
@@ -2147,7 +2147,7 @@ typedef struct {
 
 
   /** I2C TRISE register (TRISER at 0x521d) */
-  union {
+  volatile union {
 
     /// bytewise access to TRISER
     uint8_t  byte;
@@ -2165,7 +2165,7 @@ typedef struct {
 
 
   /** I2C packet error checking register (PECR at 0x521e) */
-  union {
+  volatile union {
 
     /// bytewise access to PECR
     uint8_t  byte;
@@ -2194,7 +2194,7 @@ typedef struct {
 typedef struct {
 
   /** External interrupt control register 1 (CR1 at 0x50a0) */
-  union {
+  volatile union {
 
     /// bytewise access to CR1
     uint8_t  byte;
@@ -2214,7 +2214,7 @@ typedef struct {
 
 
   /** External interrupt control register 2 (CR2 at 0x50a1) */
-  union {
+  volatile union {
 
     /// bytewise access to CR2
     uint8_t  byte;
@@ -2237,7 +2237,7 @@ typedef struct {
 
 
   /** Reset status register (RST_SR at 0x50b3) */
-  union {
+  volatile union {
 
     /// bytewise access to RST_SR
     uint8_t  byte;
@@ -2263,7 +2263,7 @@ typedef struct {
 
 
   /** Interrupt software priority register 1 (SPR1 at 0x7f70) */
-  union {
+  volatile union {
 
     /// bytewise access to SPR1
     uint8_t  byte;
@@ -2283,7 +2283,7 @@ typedef struct {
 
 
   /** Interrupt software priority register 2 (SPR2 at 0x7f71) */
-  union {
+  volatile union {
 
     /// bytewise access to SPR2
     uint8_t  byte;
@@ -2303,7 +2303,7 @@ typedef struct {
 
 
   /** Interrupt software priority register 3 (SPR3 at 0x7f72) */
-  union {
+  volatile union {
 
     /// bytewise access to SPR3
     uint8_t  byte;
@@ -2323,7 +2323,7 @@ typedef struct {
 
 
   /** Interrupt software priority register 4 (SPR4 at 0x7f73) */
-  union {
+  volatile union {
 
     /// bytewise access to SPR4
     uint8_t  byte;
@@ -2343,7 +2343,7 @@ typedef struct {
 
 
   /** Interrupt software priority register 5 (SPR5 at 0x7f74) */
-  union {
+  volatile union {
 
     /// bytewise access to SPR5
     uint8_t  byte;
@@ -2363,7 +2363,7 @@ typedef struct {
 
 
   /** Interrupt software priority register 6 (SPR6 at 0x7f75) */
-  union {
+  volatile union {
 
     /// bytewise access to SPR6
     uint8_t  byte;
@@ -2383,7 +2383,7 @@ typedef struct {
 
 
   /** Interrupt software priority register 7 (SPR7 at 0x7f76) */
-  union {
+  volatile union {
 
     /// bytewise access to SPR7
     uint8_t  byte;
@@ -2403,7 +2403,7 @@ typedef struct {
 
 
   /** Interrupt software priority register 8 (SPR8 at 0x7f77) */
-  union {
+  volatile union {
 
     /// bytewise access to SPR8
     uint8_t  byte;
@@ -2434,7 +2434,7 @@ typedef struct {
 typedef struct {
 
   /** IWDG key register (KR at 0x50e0) */
-  union {
+  volatile union {
 
     /// bytewise access to KR
     uint8_t  byte;
@@ -2451,7 +2451,7 @@ typedef struct {
 
 
   /** IWDG prescaler register (PR at 0x50e1) */
-  union {
+  volatile union {
 
     /// bytewise access to PR
     uint8_t  byte;
@@ -2469,7 +2469,7 @@ typedef struct {
 
 
   /** IWDG reload register (RLR at 0x50e2) */
-  union {
+  volatile union {
 
     /// bytewise access to RLR
     uint8_t  byte;
@@ -2498,7 +2498,7 @@ typedef struct {
 typedef struct {
 
   /** Read-out protection (ROP) (OPT0 at 0x4800) */
-  union {
+  volatile union {
 
     /// bytewise access to OPT0
     uint8_t  byte;
@@ -2512,7 +2512,7 @@ typedef struct {
 
 
   /** User boot code (UBC) (OPT1 at 0x4801) */
-  union {
+  volatile union {
 
     /// bytewise access to OPT1
     uint8_t  byte;
@@ -2526,7 +2526,7 @@ typedef struct {
 
 
   /** User boot code (UBC) (complementary byte) (NOPT1 at 0x4802) */
-  union {
+  volatile union {
 
     /// bytewise access to NOPT1
     uint8_t  byte;
@@ -2540,7 +2540,7 @@ typedef struct {
 
 
   /** Alternate function remapping (AFR) (OPT2 at 0x4803) */
-  union {
+  volatile union {
 
     /// bytewise access to OPT2
     uint8_t  byte;
@@ -2554,7 +2554,7 @@ typedef struct {
 
 
   /** Alternate function remapping (AFR) (complementary byte) (NOPT2 at 0x4804) */
-  union {
+  volatile union {
 
     /// bytewise access to NOPT2
     uint8_t  byte;
@@ -2568,7 +2568,7 @@ typedef struct {
 
 
   /** Misc. option (OPT3 at 0x4805) */
-  union {
+  volatile union {
 
     /// bytewise access to OPT3
     uint8_t  byte;
@@ -2582,7 +2582,7 @@ typedef struct {
 
 
   /** Misc. option (complementary byte) (NOPT3 at 0x4806) */
-  union {
+  volatile union {
 
     /// bytewise access to NOPT3
     uint8_t  byte;
@@ -2596,7 +2596,7 @@ typedef struct {
 
 
   /** Clock option (OPT4 at 0x4807) */
-  union {
+  volatile union {
 
     /// bytewise access to OPT4
     uint8_t  byte;
@@ -2610,7 +2610,7 @@ typedef struct {
 
 
   /** Clock option (complementary byte) (NOPT4 at 0x4808) */
-  union {
+  volatile union {
 
     /// bytewise access to NOPT4
     uint8_t  byte;
@@ -2624,7 +2624,7 @@ typedef struct {
 
 
   /** HSE clock startup (OPT5 at 0x4809) */
-  union {
+  volatile union {
 
     /// bytewise access to OPT5
     uint8_t  byte;
@@ -2638,7 +2638,7 @@ typedef struct {
 
 
   /** HSE clock startup (complementary byte) (NOPT5 at 0x480a) */
-  union {
+  volatile union {
 
     /// bytewise access to NOPT5
     uint8_t  byte;
@@ -2664,7 +2664,7 @@ typedef struct {
 typedef struct {
 
   /** Port A data output latch register (ODR at 0x5000) */
-  union {
+  volatile union {
 
     /// bytewise access to ODR
     uint8_t  byte;
@@ -2688,7 +2688,7 @@ typedef struct {
 
 
   /** Port A input pin value register (IDR at 0x5001) */
-  union {
+  volatile union {
 
     /// bytewise access to IDR
     uint8_t  byte;
@@ -2712,7 +2712,7 @@ typedef struct {
 
 
   /** Port A data direction register (DDR at 0x5002) */
-  union {
+  volatile union {
 
     /// bytewise access to DDR
     uint8_t  byte;
@@ -2736,7 +2736,7 @@ typedef struct {
 
 
   /** Port A control register 1 (CR1 at 0x5003) */
-  union {
+  volatile union {
 
     /// bytewise access to CR1
     uint8_t  byte;
@@ -2760,7 +2760,7 @@ typedef struct {
 
 
   /** Port A control register 2 (CR2 at 0x5004) */
-  union {
+  volatile union {
 
     /// bytewise access to CR2
     uint8_t  byte;
@@ -2816,7 +2816,7 @@ typedef struct {
 typedef struct {
 
   /** SPI control register 1 (CR1 at 0x5200) */
-  union {
+  volatile union {
 
     /// bytewise access to CR1
     uint8_t  byte;
@@ -2838,7 +2838,7 @@ typedef struct {
 
 
   /** SPI control register 2 (CR2 at 0x5201) */
-  union {
+  volatile union {
 
     /// bytewise access to CR2
     uint8_t  byte;
@@ -2862,7 +2862,7 @@ typedef struct {
 
 
   /** SPI interrupt control register (ICR at 0x5202) */
-  union {
+  volatile union {
 
     /// bytewise access to ICR
     uint8_t  byte;
@@ -2883,7 +2883,7 @@ typedef struct {
 
 
   /** SPI status register (SR at 0x5203) */
-  union {
+  volatile union {
 
     /// bytewise access to SR
     uint8_t  byte;
@@ -2907,7 +2907,7 @@ typedef struct {
 
 
   /** SPI data register (DR at 0x5204) */
-  union {
+  volatile union {
 
     /// bytewise access to DR
     uint8_t  byte;
@@ -2924,7 +2924,7 @@ typedef struct {
 
 
   /** SPI CRC polynomial register (CRCPR at 0x5205) */
-  union {
+  volatile union {
 
     /// bytewise access to CRCPR
     uint8_t  byte;
@@ -2941,7 +2941,7 @@ typedef struct {
 
 
   /** SPI Rx CRC register (RXCRCR at 0x5206) */
-  union {
+  volatile union {
 
     /// bytewise access to RXCRCR
     uint8_t  byte;
@@ -2958,7 +2958,7 @@ typedef struct {
 
 
   /** SPI Tx CRC register (TXCRCR at 0x5207) */
-  union {
+  volatile union {
 
     /// bytewise access to TXCRCR
     uint8_t  byte;
@@ -2987,7 +2987,7 @@ typedef struct {
 typedef struct {
 
   /** SWIM control status register (CSR at 0x7f80) */
-  union {
+  volatile union {
 
     /// bytewise access to CSR
     uint8_t  byte;
@@ -3013,7 +3013,7 @@ typedef struct {
 typedef struct {
 
   /** TIM1 control register 1 (CR1 at 0x5250) */
-  union {
+  volatile union {
 
     /// bytewise access to CR1
     uint8_t  byte;
@@ -3036,7 +3036,7 @@ typedef struct {
 
 
   /** TIM1 control register 2 (CR2 at 0x5251) */
-  union {
+  volatile union {
 
     /// bytewise access to CR2
     uint8_t  byte;
@@ -3058,7 +3058,7 @@ typedef struct {
 
 
   /** TIM1 slave mode control register (SMCR at 0x5252) */
-  union {
+  volatile union {
 
     /// bytewise access to SMCR
     uint8_t  byte;
@@ -3078,7 +3078,7 @@ typedef struct {
 
 
   /** TIM1 external trigger register (ETR at 0x5253) */
-  union {
+  volatile union {
 
     /// bytewise access to ETR
     uint8_t  byte;
@@ -3098,7 +3098,7 @@ typedef struct {
 
 
   /** TIM1 interrupt enable register (IER at 0x5254) */
-  union {
+  volatile union {
 
     /// bytewise access to IER
     uint8_t  byte;
@@ -3122,7 +3122,7 @@ typedef struct {
 
 
   /** TIM1 status register 1 (SR1 at 0x5255) */
-  union {
+  volatile union {
 
     /// bytewise access to SR1
     uint8_t  byte;
@@ -3146,7 +3146,7 @@ typedef struct {
 
 
   /** TIM1 status register 2 (SR2 at 0x5256) */
-  union {
+  volatile union {
 
     /// bytewise access to SR2
     uint8_t  byte;
@@ -3168,7 +3168,7 @@ typedef struct {
 
 
   /** TIM1 event generation register (EGR at 0x5257) */
-  union {
+  volatile union {
 
     /// bytewise access to EGR
     uint8_t  byte;
@@ -3192,7 +3192,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare mode register 1 (CCMR1 at 0x5258) */
-  union {
+  volatile union {
 
     /// bytewise access to CCMR1
     uint8_t  byte;
@@ -3213,7 +3213,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare mode register 2 (CCMR2 at 0x5259) */
-  union {
+  volatile union {
 
     /// bytewise access to CCMR2
     uint8_t  byte;
@@ -3234,7 +3234,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare mode register 3 (CCMR3 at 0x525a) */
-  union {
+  volatile union {
 
     /// bytewise access to CCMR3
     uint8_t  byte;
@@ -3255,7 +3255,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare mode register 4 (CCMR4 at 0x525b) */
-  union {
+  volatile union {
 
     /// bytewise access to CCMR4
     uint8_t  byte;
@@ -3276,7 +3276,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare enable register 1 (CCER1 at 0x525c) */
-  union {
+  volatile union {
 
     /// bytewise access to CCER1
     uint8_t  byte;
@@ -3300,7 +3300,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare enable register 2 (CCER2 at 0x525d) */
-  union {
+  volatile union {
 
     /// bytewise access to CCER2
     uint8_t  byte;
@@ -3323,7 +3323,7 @@ typedef struct {
 
 
   /** TIM1 counter high (CNTRH at 0x525e) */
-  union {
+  volatile union {
 
     /// bytewise access to CNTRH
     uint8_t  byte;
@@ -3340,7 +3340,7 @@ typedef struct {
 
 
   /** TIM1 counter low (CNTRL at 0x525f) */
-  union {
+  volatile union {
 
     /// bytewise access to CNTRL
     uint8_t  byte;
@@ -3357,7 +3357,7 @@ typedef struct {
 
 
   /** TIM1 prescaler register high (PSCRH at 0x5260) */
-  union {
+  volatile union {
 
     /// bytewise access to PSCRH
     uint8_t  byte;
@@ -3374,7 +3374,7 @@ typedef struct {
 
 
   /** TIM1 prescaler register low (PSCRL at 0x5261) */
-  union {
+  volatile union {
 
     /// bytewise access to PSCRL
     uint8_t  byte;
@@ -3391,7 +3391,7 @@ typedef struct {
 
 
   /** TIM1 auto-reload register high (ARRH at 0x5262) */
-  union {
+  volatile union {
 
     /// bytewise access to ARRH
     uint8_t  byte;
@@ -3408,7 +3408,7 @@ typedef struct {
 
 
   /** TIM1 auto-reload register low (ARRL at 0x5263) */
-  union {
+  volatile union {
 
     /// bytewise access to ARRL
     uint8_t  byte;
@@ -3425,7 +3425,7 @@ typedef struct {
 
 
   /** TIM1 repetition counter register (RCR at 0x5264) */
-  union {
+  volatile union {
 
     /// bytewise access to RCR
     uint8_t  byte;
@@ -3442,7 +3442,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare register 1 high (CCR1H at 0x5265) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR1H
     uint8_t  byte;
@@ -3459,7 +3459,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare register 1 low (CCR1L at 0x5266) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR1L
     uint8_t  byte;
@@ -3476,7 +3476,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare register 2 high (CCR2H at 0x5267) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR2H
     uint8_t  byte;
@@ -3493,7 +3493,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare register 2 low (CCR2L at 0x5268) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR2L
     uint8_t  byte;
@@ -3510,7 +3510,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare register 3 high (CCR3H at 0x5269) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR3H
     uint8_t  byte;
@@ -3527,7 +3527,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare register 3 low (CCR3L at 0x526a) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR3L
     uint8_t  byte;
@@ -3544,7 +3544,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare register 4 high (CCR4H at 0x526b) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR4H
     uint8_t  byte;
@@ -3561,7 +3561,7 @@ typedef struct {
 
 
   /** TIM1 capture/compare register 4 low (CCR4L at 0x526c) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR4L
     uint8_t  byte;
@@ -3578,7 +3578,7 @@ typedef struct {
 
 
   /** TIM1 break register (BKR at 0x526d) */
-  union {
+  volatile union {
 
     /// bytewise access to BKR
     uint8_t  byte;
@@ -3601,7 +3601,7 @@ typedef struct {
 
 
   /** TIM1 dead-time register (DTR at 0x526e) */
-  union {
+  volatile union {
 
     /// bytewise access to DTR
     uint8_t  byte;
@@ -3618,7 +3618,7 @@ typedef struct {
 
 
   /** TIM1 output idle state register (OISR at 0x526f) */
-  union {
+  volatile union {
 
     /// bytewise access to OISR
     uint8_t  byte;
@@ -3654,7 +3654,7 @@ typedef struct {
 typedef struct {
 
   /** TIM2 control register 1 (CR1 at 0x5300) */
-  union {
+  volatile union {
 
     /// bytewise access to CR1
     uint8_t  byte;
@@ -3680,7 +3680,7 @@ typedef struct {
 
 
   /** TIM2 Interrupt enable register (IER at 0x5303) */
-  union {
+  volatile union {
 
     /// bytewise access to IER
     uint8_t  byte;
@@ -3703,7 +3703,7 @@ typedef struct {
 
 
   /** TIM2 status register 1 (SR1 at 0x5304) */
-  union {
+  volatile union {
 
     /// bytewise access to SR1
     uint8_t  byte;
@@ -3726,7 +3726,7 @@ typedef struct {
 
 
   /** TIM2 status register 2 (SR2 at 0x5305) */
-  union {
+  volatile union {
 
     /// bytewise access to SR2
     uint8_t  byte;
@@ -3747,7 +3747,7 @@ typedef struct {
 
 
   /** TIM2 event generation register (EGR at 0x5306) */
-  union {
+  volatile union {
 
     /// bytewise access to EGR
     uint8_t  byte;
@@ -3770,7 +3770,7 @@ typedef struct {
 
 
   /** TIM2 capture/compare mode register 1 (CCMR1 at 0x5307) */
-  union {
+  volatile union {
 
     /// bytewise access to CCMR1
     uint8_t  byte;
@@ -3791,7 +3791,7 @@ typedef struct {
 
 
   /** TIM2 capture/compare mode register 2 (CCMR2 at 0x5308) */
-  union {
+  volatile union {
 
     /// bytewise access to CCMR2
     uint8_t  byte;
@@ -3812,7 +3812,7 @@ typedef struct {
 
 
   /** TIM2 capture/compare mode register 3 (CCMR3 at 0x5309) */
-  union {
+  volatile union {
 
     /// bytewise access to CCMR3
     uint8_t  byte;
@@ -3833,7 +3833,7 @@ typedef struct {
 
 
   /** TIM2 capture/compare enable register 1 (CCER1 at 0x530a) */
-  union {
+  volatile union {
 
     /// bytewise access to CCER1
     uint8_t  byte;
@@ -3855,7 +3855,7 @@ typedef struct {
 
 
   /** TIM2 capture/compare enable register 2 (CCER2 at 0x530b) */
-  union {
+  volatile union {
 
     /// bytewise access to CCER2
     uint8_t  byte;
@@ -3874,7 +3874,7 @@ typedef struct {
 
 
   /** TIM2 counter high (CNTRH at 0x530c) */
-  union {
+  volatile union {
 
     /// bytewise access to CNTRH
     uint8_t  byte;
@@ -3891,7 +3891,7 @@ typedef struct {
 
 
   /** TIM2 counter low (CNTRL at 0x530d) */
-  union {
+  volatile union {
 
     /// bytewise access to CNTRL
     uint8_t  byte;
@@ -3908,7 +3908,7 @@ typedef struct {
 
 
   /** TIM2 prescaler register (PSCR at 0x530e) */
-  union {
+  volatile union {
 
     /// bytewise access to PSCR
     uint8_t  byte;
@@ -3926,7 +3926,7 @@ typedef struct {
 
 
   /** TIM2 auto-reload register high (ARRH at 0x530f) */
-  union {
+  volatile union {
 
     /// bytewise access to ARRH
     uint8_t  byte;
@@ -3943,7 +3943,7 @@ typedef struct {
 
 
   /** TIM2 auto-reload register low (ARRL at 0x5310) */
-  union {
+  volatile union {
 
     /// bytewise access to ARRL
     uint8_t  byte;
@@ -3960,7 +3960,7 @@ typedef struct {
 
 
   /** TIM2 capture/compare register 1 high (CCR1H at 0x5311) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR1H
     uint8_t  byte;
@@ -3977,7 +3977,7 @@ typedef struct {
 
 
   /** TIM2 capture/compare register 1 low (CCR1L at 0x5312) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR1L
     uint8_t  byte;
@@ -3994,7 +3994,7 @@ typedef struct {
 
 
   /** TIM2 capture/compare reg (CCR2H at 0x5313) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR2H
     uint8_t  byte;
@@ -4011,7 +4011,7 @@ typedef struct {
 
 
   /** TIM2 capture/compare register 2 low (CCR2L at 0x5314) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR2L
     uint8_t  byte;
@@ -4028,7 +4028,7 @@ typedef struct {
 
 
   /** TIM2 capture/compare register 3 high (CCR3H at 0x5315) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR3H
     uint8_t  byte;
@@ -4045,7 +4045,7 @@ typedef struct {
 
 
   /** TIM2 capture/compare register 3 low (CCR3L at 0x5316) */
-  union {
+  volatile union {
 
     /// bytewise access to CCR3L
     uint8_t  byte;
@@ -4074,7 +4074,7 @@ typedef struct {
 typedef struct {
 
   /** TIM4 control register 1 (CR1 at 0x5340) */
-  union {
+  volatile union {
 
     /// bytewise access to CR1
     uint8_t  byte;
@@ -4100,7 +4100,7 @@ typedef struct {
 
 
   /** TIM4 interrupt enable register (IER at 0x5343) */
-  union {
+  volatile union {
 
     /// bytewise access to IER
     uint8_t  byte;
@@ -4120,7 +4120,7 @@ typedef struct {
 
 
   /** TIM4 status register (SR at 0x5344) */
-  union {
+  volatile union {
 
     /// bytewise access to SR
     uint8_t  byte;
@@ -4140,7 +4140,7 @@ typedef struct {
 
 
   /** TIM4 event generation register (EGR at 0x5345) */
-  union {
+  volatile union {
 
     /// bytewise access to EGR
     uint8_t  byte;
@@ -4160,7 +4160,7 @@ typedef struct {
 
 
   /** TIM4 counter (CNTR at 0x5346) */
-  union {
+  volatile union {
 
     /// bytewise access to CNTR
     uint8_t  byte;
@@ -4177,7 +4177,7 @@ typedef struct {
 
 
   /** TIM4 prescaler register (PSCR at 0x5347) */
-  union {
+  volatile union {
 
     /// bytewise access to PSCR
     uint8_t  byte;
@@ -4195,7 +4195,7 @@ typedef struct {
 
 
   /** TIM4 auto-reload register (ARR at 0x5348) */
-  union {
+  volatile union {
 
     /// bytewise access to ARR
     uint8_t  byte;
@@ -4224,7 +4224,7 @@ typedef struct {
 typedef struct {
 
   /** UART1 status register (SR at 0x5230) */
-  union {
+  volatile union {
 
     /// bytewise access to SR
     uint8_t  byte;
@@ -4248,7 +4248,7 @@ typedef struct {
 
 
   /** UART1 data register (DR at 0x5231) */
-  union {
+  volatile union {
 
     /// bytewise access to DR
     uint8_t  byte;
@@ -4265,7 +4265,7 @@ typedef struct {
 
 
   /** UART1 baud rate register 1 (BRR1 at 0x5232) */
-  union {
+  volatile union {
 
     /// bytewise access to BRR1
     uint8_t  byte;
@@ -4282,7 +4282,7 @@ typedef struct {
 
 
   /** UART1 baud rate register 2 (BRR2 at 0x5233) */
-  union {
+  volatile union {
 
     /// bytewise access to BRR2
     uint8_t  byte;
@@ -4299,7 +4299,7 @@ typedef struct {
 
 
   /** UART1 control register 1 (CR1 at 0x5234) */
-  union {
+  volatile union {
 
     /// bytewise access to CR1
     uint8_t  byte;
@@ -4323,7 +4323,7 @@ typedef struct {
 
 
   /** UART1 control register 2 (CR2 at 0x5235) */
-  union {
+  volatile union {
 
     /// bytewise access to CR2
     uint8_t  byte;
@@ -4347,7 +4347,7 @@ typedef struct {
 
 
   /** UART1 control register 3 (CR3 at 0x5236) */
-  union {
+  volatile union {
 
     /// bytewise access to CR3
     uint8_t  byte;
@@ -4370,7 +4370,7 @@ typedef struct {
 
 
   /** UART1 control register 4 (CR4 at 0x5237) */
-  union {
+  volatile union {
 
     /// bytewise access to CR4
     uint8_t  byte;
@@ -4391,7 +4391,7 @@ typedef struct {
 
 
   /** UART1 control register 5 (CR5 at 0x5238) */
-  union {
+  volatile union {
 
     /// bytewise access to CR5
     uint8_t  byte;
@@ -4414,7 +4414,7 @@ typedef struct {
 
 
   /** UART1 guard time register (GTR at 0x5239) */
-  union {
+  volatile union {
 
     /// bytewise access to GTR
     uint8_t  byte;
@@ -4431,7 +4431,7 @@ typedef struct {
 
 
   /** UART1 prescaler register (PSCR at 0x523a) */
-  union {
+  volatile union {
 
     /// bytewise access to PSCR
     uint8_t  byte;
@@ -4460,7 +4460,7 @@ typedef struct {
 typedef struct {
 
   /** WWDG control register (CR at 0x50d1) */
-  union {
+  volatile union {
 
     /// bytewise access to CR
     uint8_t  byte;
@@ -4484,7 +4484,7 @@ typedef struct {
 
 
   /** WWDR window register (WR at 0x50d2) */
-  union {
+  volatile union {
 
     /// bytewise access to WR
     uint8_t  byte;
